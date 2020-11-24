@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link rel="stylesheet" href="{% static 'signup1/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="{% static 'signup1/css/login.css' %}">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <div class="inner">
+        <div class="image-holder">
+            <img src="{% static 'signup1/images/login.png' %}" alt="">
+        </div>
+
+        <form method="POST">
+            {% csrf_token %}
+            <h3>Welcome To Hobnob</h3>
+            
+            <div class="form-row">
+                {{form.first_name.label}}{{form.first_name}}
+                {{form.username.label}} {{form.username}}
+                <!-- <input type="text" class="form-control" placeholder="Name" name="name"> -->
+                <!-- <input type="email" class="form-control" placeholder="Email"> -->
+            </div>
+            <div class="form-row">
+                {{form.phone_number.label}} {{form.phone_number}}
+                <div class="form-holder">
+                    {{form.profile_category.label}}{{form.profile_category}}
+                    <i class="zmdi zmdi-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="form-row">
+                {{form.password1.label}}{{ form.password1 }}
+                {{form.password2.label}}{{ form.password2 }}
+            </div> 
+
+            {{form.errors}}
+
+            <button type="submit">SignUp
+                <i class="zmdi zmdi-long-arrow-right"></i>
+            </button>
+            <br>
+            <h4 style="float:right;">Have An Account With Hobnob ? <a href="{% url 'signup:login' %}">Login</a></h4>
+        </form>
+
+    </div>
+</div>
+
+<script src="{% static 'signup1/js/jquery-3.3.1.min.js'%}"></script>
+<script src="{% static 'signup1/js/main.js' %}"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

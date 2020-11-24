@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'signup1/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'signup1/css/login.css' %}">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="{% static 'signup1/images/login.png' %}" alt="">
+				</div>
+				<form method="post">
+			
+					{% csrf_token %}
+					<h3>Welcome Back To Hobnob</h3>
+					<br>
+					<div class="form-row">
+						{{form.email.label}}
+						{{form.email }}
+					</div>
+					<div class="form-row">
+						{{form.password.label}}
+						{{form.password}}
+					</div>
+					<br>
+					<button>Login
+						<i class="zmdi zmdi-long-arrow-right"></i>
+					</button>
+
+					{{ form.errors }}
+					
+<br><br>
+					<h4 style="float:right;">New To Hobnob <a href="{% url 'signup:signup' %}">Signup</a></h4>
+					
+
+				</form>
+				
+			</div>
+		</div>
+
+
+		<script src="{% static 'signup1/js/login.js' %}"></script>
+	</body>
+</html>

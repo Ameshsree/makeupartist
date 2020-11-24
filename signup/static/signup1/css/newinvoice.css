@@ -1,0 +1,176 @@
+.container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-top:12px;
+}
+
+.invoice h3 {
+    text-align: center;
+}
+
+.invoice
+{
+    border-style:solid;
+    border-width:10px;
+    border-color:#138496;
+    padding:20px;
+}
+
+
+.total {
+    display:block;
+    text-align:right;
+    margin-right:8%;
+    margin-bottom:5px;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details>div {
+    border: 1px solid grey;
+    border-bottom:0px;
+    border-right:0px;
+    border-left:0px;
+}
+
+@media(max-width: 767px) {
+    .table {
+        display: block;
+        overflow: auto;
+    }
+}
+
+.form-row {
+    flex-wrap: nowrap!important;
+}
+
+@media (min-width: 0) {
+    .col-md-2 {
+        flex: 0 0 24.666667%;
+        max-width: 24.666667%;
+    }
+}
+
+.invoiceDetails {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.invoiceDetails span {
+    flex: 1;
+    padding: 6px;
+}
+
+.invoiceDetails p {
+    margin-bottom: 2px;
+}
+
+.invoiceBox {
+    height: 2rem;
+}
+
+.table {
+    border: 2px solid grey;
+    border-top: 0px;
+    border-right: 0px;
+    border-left:0px;
+}
+
+.bankDetails {
+   border-top: 1px solid grey;
+   border-bottom: 1px solid grey;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#images {
+    display: flex;
+    margin-bottom:15px;
+    
+    justify-content: space-evenly;
+}
+
+
+#signatureOutput{
+
+    margin-top: 20px;
+    text-align:right;
+   
+}
+
+
+@media(max-width:700px) {
+    .profileImg img {
+        width: 6em;
+    }
+}
+
+
+/* required notification */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  .gst{
+    display: block;
+
+  }
+
+  #gst
+  {
+    display: block;
+
+  }
+
+  

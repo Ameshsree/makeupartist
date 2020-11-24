@@ -1,0 +1,107 @@
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 15px auto;
+    border-bottom: 2px solid rgb(212, 209, 209);
+}
+
+/*  icon color change*/
+img{
+    width:2rem;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-linkedin {
+    color: #2867B2;
+}
+
+.fa-facebook {
+    color: #4267B2;
+}
+
+.fa-youtube {
+    color: #FF0000
+}
+
+/* .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+} */
+
+
+
+.socialHeader {
+    display: flex;
+    margin: 10px;
+}
+
+.socialHeading {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.socialButton {
+    margin-left: auto;
+}
+
+.socialDetails {
+    margin: 5px 40px;
+    
+}
+
+.socialField {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid rgb(212, 209, 209);
+    outline: none;
+}
+
+ .display {
+    display: none!important;
+    
+} 
+
+.socialButtons>button {
+    margin: 5px;
+    color: rgb(127, 171, 207);
+    background: white;
+    border: 1px solid rgb(127, 171, 207);
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.socialButtons>button:hover {
+    background: rgb(127, 171, 207);
+    color: white;
+    cursor: pointer;
+    outline: none
+}
+
+.socialContent {
+    margin: 0px 45px;
+}
+.socialContent>div {
+    margin: 5px;
+}
+
+
+input:nth-child(even) {
+    width: 50%;
+}
+i{
+    font-size: large;
+}
+y.on { opacity: 1; }

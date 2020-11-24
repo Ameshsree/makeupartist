@@ -1,0 +1,157 @@
+.modal-container {
+  margin: 5px auto ;
+  padding-top: 0px;
+  position: relative;
+  width: 160px;
+  border: 5px solid white;
+  width: max-content;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 5;
+  border-radius: 10px;
+  grid-gap: 20px 50px;
+}
+.modal-container .modal-btn {
+  display: block;
+  margin:  auto;
+  color: #fff;
+  width: 160px;
+  height: 25px;
+  line-height: 50px;
+  background: #446cb3;
+  font-size: 22px;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 5px 5px -5px #333;
+  transition: background 0.3s ease-in;
+  
+
+}
+.modal-container .modal-btn:hover {
+  background: blue;
+}
+.modal-container .modal-content,
+.modal-container .modal-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+ 
+}
+.modal-container .modal-close {
+  color: #aaa;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding-top: 3px;
+  background: #fff;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.modal-container .modal-close:hover {
+  color: #333;
+}
+.modal-container .modal-content-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  right: 30px;
+  background: blue;
+  color: #fff;
+  width: 50px;
+  border-radius: 2px;
+  font-size: 15px;
+  height: 25px;
+  padding-top: 9px;
+  font-weight: normal;
+  padding-left: 4px;
+  padding-right: 4px;
+  
+}
+.modal-container .modal-content-btn:hover {
+  color: #fff;
+  background: blue;
+}
+.modal-container #modal-toggle {
+  display: none;
+}
+.modal-container #modal-toggle.active ~ .modal-backdrop,
+.modal-container #modal-toggle:checked ~ .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+  
+}
+.modal-container #modal-toggle.active ~ .modal-content,
+.modal-container #modal-toggle:checked ~ .modal-content {
+  opacity: 1;
+  background-color: #fff;
+  width: 770px;
+  height: 500px;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 200px);
+  top: 12%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+ 
+}
+@media (max-width: 400px) {
+  .modal-container #modal-toggle.active ~ .modal-content,
+  .modal-container #modal-toggle:checked ~ .modal-content {
+    left: 0;
+  }
+}
+
+.cancel-btn {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  bottom: 20px;
+  border-style: hidden;
+  background: blue;
+  color: #fff;
+  width: 80px;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 25px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 9px;
+  padding-bottom: 4px;
+  font-weight: normal;
+  font-size: 15px;
+ 
+}
+
+.box {
+  width: 30px;
+  height: 130px;
+  padding: 5px;
+  color: gray;
+  padding: 30px;
+  box-sizing: border-box;
+  
+}

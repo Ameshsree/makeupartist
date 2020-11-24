@@ -1,0 +1,26 @@
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+[type="text"],
+[type="email"],
+[type="number"],
+[type="password"],
+select {
+    display: block;
+    padding: 0.5rem;
+    background: transparent;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+span {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
